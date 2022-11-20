@@ -33,6 +33,10 @@ namespace PIM_VIII_TESTE.Data
             base.OnModelCreating(modelBuilder);
         }
 
+    
+
+        public DbSet<PIM_VIII_TESTE.Models.Telefone> Telefone { get; set; }
+
        
     }
 }

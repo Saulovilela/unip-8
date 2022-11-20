@@ -160,3 +160,8 @@ C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VII
 C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Enderecoes\Details.cshtml.g.cs
 C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Enderecoes\Edit.cshtml.g.cs
 C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Enderecoes\Index.cshtml.g.cs
+C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Telefones\Create.cshtml.g.cs
+C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Telefones\Delete.cshtml.g.cs
+C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Telefones\Details.cshtml.g.cs
+C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Telefones\Edit.cshtml.g.cs
+C:\Users\ViniciusDev\Documents\Visual Studio 2019\MVC MVC\PIM_VIII_TESTE\PIM_VIII_TESTE\obj\Debug\netcoreapp3.1\Razor\Views\Telefones\Index.cshtml.g.cs
