@@ -26,6 +26,14 @@ namespace PIM_VIII_TESTE.Models
         [Column("TipoTelefone")]
         public string TipoTelefone { get; set; }
 
+        [Display(Name = "PessoaId")]
+        [Column("PessoaId")]
+        public int PessoaId { set; get; }
+
+        [Display(Name = "Pessoa")]
+        [Column("Pessoa")]
+        public Pessoas Pessoa { get; set; }
+
 
     }
 }

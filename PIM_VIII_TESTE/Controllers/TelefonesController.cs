@@ -22,7 +22,10 @@ namespace PIM_VIII_TESTE.Controllers
         // GET: Telefones
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Telefone.ToListAsync());
+
+            var contexto = _context.Telefones.Include(e => e.Pessoa);
+            return View(await contexto.ToListAsync());
+            //return View(await _context.Telefones.ToListAsync());
         }
 
         // GET: Telefones/Details/5
@@ -33,7 +36,7 @@ namespace PIM_VIII_TESTE.Controllers
                 return NotFound();
             }
 
-            var telefone = await _context.Telefone
+            var telefone = await _context.Telefones
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (telefone == null)
             {
@@ -46,6 +49,7 @@ namespace PIM_VIII_TESTE.Controllers
         // GET: Telefones/Create
         public IActionResult Create()
         {
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "Id", "Id");
             return View();
         }
 
@@ -54,7 +58,7 @@ namespace PIM_VIII_TESTE.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Numero,DDD,TipoTelefone")] Telefone telefone)
+        public async Task<IActionResult> Create([Bind("Id,Numero,DDD,TipoTelefone,PessoaId")] Telefone telefone)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +66,7 @@ namespace PIM_VIII_TESTE.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "Id", "Id", telefone.PessoaId);
             return View(telefone);
         }
 
@@ -73,20 +78,23 @@ namespace PIM_VIII_TESTE.Controllers
                 return NotFound();
             }
 
-            var telefone = await _context.Telefone.FindAsync(id);
+            var telefone = await _context.Telefones.FindAsync(id);
             if (telefone == null)
             {
                 return NotFound();
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "Id", "Id", telefone.PessoaId);
             return View(telefone);
         }
+
+
 
         // POST: Telefones/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Numero,DDD,TipoTelefone")] Telefone telefone)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Numero,DDD,TipoTelefone,PessoaId")] Telefone telefone)
         {
             if (id != telefone.Id)
             {
@@ -113,8 +121,10 @@ namespace PIM_VIII_TESTE.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "Id", "Id", telefone.PessoaId);
             return View(telefone);
         }
+
 
         // GET: Telefones/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -124,7 +134,7 @@ namespace PIM_VIII_TESTE.Controllers
                 return NotFound();
             }
 
-            var telefone = await _context.Telefone
+            var telefone = await _context.Telefones
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (telefone == null)
             {
@@ -139,15 +149,15 @@ namespace PIM_VIII_TESTE.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var telefone = await _context.Telefone.FindAsync(id);
-            _context.Telefone.Remove(telefone);
+            var telefone = await _context.Telefones.FindAsync(id);
+            _context.Telefones.Remove(telefone);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool TelefoneExists(int id)
         {
-            return _context.Telefone.Any(e => e.Id == id);
+            return _context.Telefones.Any(e => e.Id == id);
         }
     }
 }

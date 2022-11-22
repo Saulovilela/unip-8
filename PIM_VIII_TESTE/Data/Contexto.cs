@@ -18,24 +18,20 @@ namespace PIM_VIII_TESTE.Data
         public DbSet<Pessoas> Pessoas { get; set; }
 
         public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Telefone> Telefones { get; set; }
 
-    
-
+ 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            // modelBuilder.ApplyConfiguration(new EnderecoMap());
-
             modelBuilder.ApplyConfiguration(new EnderecoMap());
-
-       
+            modelBuilder.ApplyConfiguration(new TelefoneMap());
 
             base.OnModelCreating(modelBuilder);
         }
 
     
 
-        public DbSet<PIM_VIII_TESTE.Models.Telefone> Telefone { get; set; }
+        
 
        
     }

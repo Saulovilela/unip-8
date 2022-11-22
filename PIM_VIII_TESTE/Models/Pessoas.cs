@@ -28,6 +28,10 @@ namespace PIM_VIII_TESTE.Models
         [Column("Endereco")]
         public Endereco Endereco { get; set; }
 
+        [Display(Name = "Telefone")]
+        [Column("Telefone")]
+        public Telefone Telefone { get; set; }
+
   
         
 
