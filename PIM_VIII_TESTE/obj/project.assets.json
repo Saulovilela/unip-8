@@ -8567,25 +8567,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ViniciusDev\\.nuget\\packages\\": {},
+    "C:\\Users\\Saulo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ViniciusDev\\Documents\\Visual Studio 2019\\MVC MVC\\PIM_VIII_TESTE\\PIM_VIII_TESTE\\PIM_VIII_TESTE.csproj",
+      "projectUniqueName": "C:\\Users\\Saulo\\workspace\\Projeto-UNIP\\PIM_VIII_TESTE\\PIM_VIII_TESTE.csproj",
       "projectName": "PIM_VIII_TESTE",
-      "projectPath": "C:\\Users\\ViniciusDev\\Documents\\Visual Studio 2019\\MVC MVC\\PIM_VIII_TESTE\\PIM_VIII_TESTE\\PIM_VIII_TESTE.csproj",
-      "packagesPath": "C:\\Users\\ViniciusDev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ViniciusDev\\Documents\\Visual Studio 2019\\MVC MVC\\PIM_VIII_TESTE\\PIM_VIII_TESTE\\obj\\",
+      "projectPath": "C:\\Users\\Saulo\\workspace\\Projeto-UNIP\\PIM_VIII_TESTE\\PIM_VIII_TESTE.csproj",
+      "packagesPath": "C:\\Users\\Saulo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Saulo\\workspace\\Projeto-UNIP\\PIM_VIII_TESTE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ViniciusDev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Saulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8653,7 +8653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
       }
     }
   }
